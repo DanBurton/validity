@@ -1,13 +1,7 @@
-name:                validity
-version:             0.3.0.1
-synopsis:            Validity typeclass
-description:         
-  This package provides the Validity Typeclass
-  For instances of types in other packages, see:
-  .
-  - validity-containers
-  - validity-text
-
+name:                validity-text
+version:             0.1.0.0
+synopsis:            Validity instances for text
+description:         Please see README.md
 homepage:            https://github.com/NorfairKing/validity#readme
 license:             MIT
 license-file:        LICENSE
@@ -21,9 +15,10 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Data.Validity
-                     , Data.RelativeValidity
-  build-depends:       base >= 4 && < 5
+  exposed-modules:     Data.Validity.Text
+  build-depends:       base < 5
+                     , validity
+                     , text 
   default-language:    Haskell2010
 
 source-repository head
