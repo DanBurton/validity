@@ -33,7 +33,7 @@ tests:
     ghc-options: -threaded
     dependencies:
     - base
-    - doctest >=0.11 && <0.14
+    - doctest
     - genvalidity-hspec-binary
   genvalidity-hspec-binary-test:
     main: Spec.hs

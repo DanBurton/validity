@@ -32,7 +32,7 @@ tests:
     ghc-options: -threaded
     dependencies:
     - base
-    - doctest >=0.11 && <0.14
+    - doctest
     - genvalidity-hspec-cereal
   genvalidity-hspec-cereal-test:
     main: Spec.hs
